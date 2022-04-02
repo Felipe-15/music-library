@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A custom music library to make your day more light and comfy."
+    />
+    <title>Music Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/aside.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <aside class="menu-aside">
+      <div class="menu-holder">
+        <div class="profile-container">
+          <div class="image-container">
+            <img src="assets/images/profile.jpg" alt="Profile photo" />
+          </div>
+          <div class="user-info">
+            <span>Dany Schudler</span>
+            <a href="#"
+              ><span>Edit profile</span> <i class="fa-solid fa-gear"></i
+            ></a>
+          </div>
+        </div>
+        <button class="menu-button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="close-menu-button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <nav class="nav-container">
+          <div class="nav-links-container">
+            <a class="selected" href="#"
+              ><i class="fa-brands fa-slack"></i><span>Overview</span></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-newspaper"></i><span>News</span></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-music"></i><span>Playlists</span></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-bullseye"></i><span>Discover</span></a
+            >
+          </div>
+          <div class="nav-links-container">
+            <a href="#"
+              ><i class="fa-solid fa-sliders"></i><span>Dashboard</span></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-message"></i><span>Messages</span></a
+            >
+            <a href="#"
+              ><i class="fa-solid fa-bell"></i><span>Notifications</span></a
+            >
+            <a href="#"><i class="fa-solid fa-user"></i><span>Account</span></a>
+          </div>
+        </nav>
+      </div>
+    </aside>
+    <main>
+      <div class="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="input-container">
+          <input
+            type="search"
+            placeholder="Search artists, playlists or tracks"
+          />
+          <div class="search-focus"></div>
+        </div>
+      </div>
+      <section class="featured-playlists">
+        <h2>Featured Playlists</h2>
+        <div class="playlists-container-slider">
+          <div class="playlist-item">
+            <a href="#">
+              <div class="playlist-img-container">
+                <img src="assets/images/playlist1.jpg" alt="Playlist cover" />
+              </div>
+            </a>
+            <p>Only STARDUST</p>
+            <span>24 tracks</span>
+          </div>
+          <div class="playlist-item">
+            <a href="#">
+              <div class="playlist-img-container">
+                <img src="assets/images/playlist2.jpg" alt="Playlist cover" />
+              </div>
+            </a>
+            <p>Mike Vella</p>
+            <span>12 tracks</span>
+          </div>
+          <div class="playlist-item">
+            <a href="#">
+              <div class="playlist-img-container">
+                <img src="assets/images/playlist3.jpg" alt="Playlist cover" />
+              </div>
+            </a>
+            <p>the best singles s2</p>
+            <span>163 tracks</span>
+          </div>
+          <div class="playlist-item">
+            <a href="#">
+              <div class="playlist-img-container">
+                <img src="assets/images/playlist4.jpg" alt="Playlist cover" />
+              </div>
+            </a>
+            <p>Indies</p>
+            <span>95 tracks</span>
+          </div>
+        </div>
+      </section>
+      <div class="grid-container">
+        <section class="profile-views">
+          <h2>Profile Views</h2>
+          <div class="artists-profiles-list">
+            <div class="artist-profile-item">
+              <a href="#">
+                <div class="artist-personal-info-container">
+                  <div class="artist-img-container hover-effect">
+                    <img src="assets/images/view1.jpg" alt="Artist profile" />
+                  </div>
+                  <div class="artist-personal-info">
+                    <p>Jenny Villa</p>
+                    <span>1 day ago</span>
+                  </div>
+                </div>
+              </a>
+              <span>4 albums</span>
+            </div>
+            <div class="artist-profile-item">
+              <a href="#">
+                <div class="artist-personal-info-container">
+                  <div class="artist-img-container hover-effect">
+                    <img src="assets/images/view2.jpg" alt="Artist profile" />
+                  </div>
+                  <div class="artist-personal-info">
+                    <p>Aquila</p>
+                    <span>3 days ago</span>
+                  </div>
+                </div>
+              </a>
+              <span>2 albums</span>
+            </div>
+            <div class="artist-profile-item">
+              <a href="#">
+                <div class="artist-personal-info-container">
+                  <div class="artist-img-container hover-effect">
+                    <img src="assets/images/view3.jpg" alt="Artist profile" />
+                  </div>
+                  <div class="artist-personal-info">
+                    <p>This is War</p>
+                    <span>2 weeks ago</span>
+                  </div>
+                </div>
+              </a>
+              <span>5 albums</span>
+            </div>
+          </div>
+        </section>
+        <section class="tracks-section">
+          <h2>Tracks</h2>
+          <div class="tracks-list">
+            <div class="track-item">
+              <a href="#">
+                <div class="track-img-container hover-effect">
+                  <img src="assets/images/track1.jpg" alt="Track cover" />
+                </div>
+              </a>
+              <p>Mahara Bon</p>
+              <span>Sexy in Paris</span>
+            </div>
+            <div class="track-item">
+              <a href="#">
+                <div class="track-img-container hover-effect">
+                  <img src="assets/images/track2.jpg" alt="Track cover" />
+                </div>
+              </a>
+              <p>Donna</p>
+              <span>Pseudo-life</span>
+            </div>
+            <div class="track-item">
+              <a href="#">
+                <div class="track-img-container hover-effect">
+                  <img src="assets/images/track3.jpg" alt="Track cover" />
+                </div>
+              </a>
+              <p>Avven</p>
+              <span>Magic</span>
+            </div>
+            <div class="track-item">
+              <a href="#">
+                <div class="track-img-container hover-effect">
+                  <img src="assets/images/track4.jpg" alt="Track cover" />
+                </div>
+              </a>
+              <p>Cony Ashton</p>
+              <span>Living Outside</span>
+            </div>
+            <div class="track-item">
+              <a href="#">
+                <div class="track-img-container hover-effect">
+                  <img src="assets/images/track5.jpg" alt="Track cover" />
+                </div>
+              </a>
+              <p>Back to Mars</p>
+              <span>Rolling Below</span>
+            </div>
+            <div class="track-item">
+              <a href="#">
+                <div class="track-img-container hover-effect">
+                  <img src="assets/images/track6.jpg" alt="Track cover" />
+                </div>
+              </a>
+              <p>Maya Mendes</p>
+              <span>Zero Love</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
