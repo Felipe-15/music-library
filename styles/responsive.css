@@ -1,0 +1,195 @@
+@media (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  aside {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+
+    transition: height 1s ease-in-out;
+  }
+
+  .open-menu-animation {
+    animation: openanimation 1s normal;
+  }
+
+  .close-menu-animation {
+    height: 10.8rem;
+  }
+
+  @keyframes openanimation {
+    from {
+      bottom: -100vh;
+    }
+
+    to {
+      bottom: 0;
+    }
+  }
+
+  @keyframes closeanimation {
+    from {
+      height: 100%;
+    }
+
+    to {
+      height: 108px;
+    }
+  }
+
+  .menu-holder {
+    flex-direction: row;
+    justify-content: space-between;
+    position: static;
+
+    width: 100%;
+
+    padding: 2.4rem;
+
+    height: auto;
+  }
+
+  .centered {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-info {
+    padding-top: 0.4rem;
+    width: 20rem;
+  }
+
+  .profile-absolute {
+    position: absolute;
+    top: 2.4rem;
+    left: 2.4rem;
+  }
+
+  .user-info a span,
+  .user-info a i {
+    font-size: 1.4rem;
+  }
+
+  .menu-button {
+    display: inline;
+
+    background: transparent;
+    border: none;
+
+    color: var(--content);
+    font-size: 2.4rem;
+  }
+
+  .nav-links-container {
+    justify-content: center;
+
+    border: none;
+  }
+
+  .menu-button i {
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .opened-menu {
+    position: absolute;
+    height: 100%;
+
+    animation: openanimation 1s normal;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 5;
+  }
+
+  .closed-menu {
+    justify-content: space-between;
+    animation: closeanimation 1s normal;
+  }
+
+  .menu-button:active i {
+    opacity: 0.8;
+  }
+
+  .close-menu-button {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+    z-index: 5;
+
+    background: transparent;
+    border: none;
+
+    color: var(--content);
+    font-size: 3.2rem;
+  }
+
+  .close-menu-button i {
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .close-menu-button:active i {
+    opacity: 0.8;
+  }
+
+  aside nav {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    width: auto;
+  }
+
+  .nav-links-container a {
+    font-size: 2.4rem;
+  }
+
+  .nav-links-container a i {
+    font-size: 2rem;
+  }
+
+  main {
+    overflow: visible;
+
+    overflow-x: hidden;
+
+    padding-left: 2.4rem;
+  }
+
+  .search-container .fa-solid {
+    font-size: 2rem;
+  }
+
+  .search-container input {
+    font-size: 2rem;
+    width: 36rem;
+  }
+
+  main .grid-container section span,
+  .featured-playlists span {
+    font-size: 1.4rem;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .artists-profiles-list {
+    height: 22rem;
+  }
+
+  .tracks-section {
+    width: 100%;
+
+    margin-bottom: 12rem;
+  }
+}

@@ -1,0 +1,328 @@
+main {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  padding: 1.6rem 1.6rem 1.6rem 4rem;
+
+  height: 100vh;
+
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 2rem;
+}
+
+.search-container .fa-solid {
+  margin-right: 1.2rem;
+  font-size: 2rem;
+
+  color: var(--gray);
+}
+
+.search-container input {
+  position: relative;
+
+  width: 30rem;
+  padding: 0.8rem;
+
+  background: transparent;
+  border: none;
+
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--content);
+
+  caret-color: var(--content);
+}
+
+.input-container {
+  position: relative;
+}
+
+.search-container .search-focus {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  border-bottom: 1px solid var(--content);
+  background: var(--content);
+
+  height: 1px;
+  width: 0;
+
+  transition: width 0.2s ease-in-out;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.search-container input:focus + .search-focus {
+  width: 100%;
+}
+
+.featured-playlists h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  color: var(--content);
+
+  margin-bottom: 1.2rem;
+}
+
+.playlists-container-slider {
+  display: flex;
+  overflow-x: scroll;
+
+  width: 100%;
+
+  margin-bottom: 2.4rem;
+  padding-bottom: 2rem;
+}
+
+.playlist-item {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  margin-right: 2rem;
+}
+
+.playlist-img-container {
+  width: 32rem;
+  height: 18rem;
+
+  margin-bottom: 1.2rem;
+
+  overflow: hidden;
+
+  border-radius: 1.6rem;
+
+  filter: brightness(0.6);
+
+  cursor: pointer;
+
+  transition: filter 0.3s ease-in-out;
+}
+
+.playlist-img-container:hover {
+  filter: brightness(0.9);
+}
+
+.playlist-img-container:hover img {
+  transform: scale(1.1);
+}
+
+.playlist-img-container img {
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.playlist-item p {
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--content);
+  font-weight: 700;
+
+  margin-bottom: 0.8rem;
+}
+
+.playlist-item span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.profile-views {
+  display: flex;
+  flex-direction: column;
+
+  padding-right: 6.4rem;
+}
+
+.profile-views h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: var(--content);
+
+  margin-bottom: 1.6rem;
+}
+
+.artists-profiles-list {
+  display: flex;
+
+  height: 100%;
+
+  flex-direction: column;
+  overflow-y: scroll;
+
+  padding-bottom: 0.8rem;
+}
+
+.artists-profiles-list::-webkit-scrollbar {
+  display: none;
+}
+
+.artist-profile-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.artist-profile-item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.artist-profile-item a {
+  text-decoration: none;
+}
+
+.artist-profile-item a:hover .artist-img-container {
+  filter: brightness(1);
+}
+
+.artist-profile-item span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: var(--gray);
+
+  padding-right: 2.4rem;
+}
+
+.artist-personal-info-container {
+  display: flex;
+}
+
+.artist-img-container {
+  height: 5rem;
+  width: 5rem;
+
+  border-radius: 0.4rem;
+
+  margin-right: 1.2rem;
+
+  overflow: hidden;
+}
+
+.artist-img-container img {
+  width: 100%;
+  height: auto;
+}
+
+.artist-personal-info {
+  padding-top: 0.4rem;
+}
+
+.artist-personal-info p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  color: var(--content);
+  margin-bottom: 0.8rem;
+}
+
+.artist-personal-info span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+/*.artist-personal-info-container img {
+  height: 6rem;
+  width: 6rem;
+
+  object-fit: cover;
+  object-position: center top;
+}*/
+
+.tracks-section {
+  display: flex;
+  flex-direction: column;
+  width: 54rem;
+}
+
+.tracks-section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: var(--content);
+
+  margin-bottom: 1.6rem;
+}
+
+.tracks-list {
+  display: flex;
+
+  width: 100%;
+
+  overflow-x: scroll;
+
+  padding-bottom: 2rem;
+}
+
+.track-item {
+  width: 18rem;
+}
+
+.track-item:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.track-img-container {
+  height: 10rem;
+  width: 10rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  border-radius: 0.4rem;
+
+  margin-bottom: 1.2rem;
+
+  filter: brightness(0.8);
+}
+
+.track-img-container img {
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.track-item p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  color: var(--content);
+  margin-bottom: 0.8rem;
+}
+
+.track-item span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+.hover-effect {
+  filter: brightness(0.8);
+  transition: filter 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+  filter: brightness(1);
+}

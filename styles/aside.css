@@ -1,0 +1,158 @@
+aside {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--secondary);
+}
+
+.menu-holder {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  padding: 5.6rem 1.6rem;
+
+  background: var(--secondary);
+  height: 100vh;
+}
+
+.profile-container {
+  display: flex;
+}
+
+.profile-container .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+
+  border-radius: 0.4rem;
+
+  overflow: hidden;
+}
+
+.image-container {
+  margin-right: 0.8rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+
+  width: 12rem;
+  height: 6rem;
+}
+
+.user-info span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--content);
+
+  margin-bottom: 0.6rem;
+}
+
+.user-info a {
+  text-decoration: none;
+  color: var(--gray);
+  margin-bottom: 0.4rem;
+}
+
+.user-info a:hover span {
+  color: var(--content);
+}
+
+.user-info a:hover i {
+  color: var(--content);
+}
+
+.user-info a span {
+  margin-right: 0.4rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: var(--gray);
+
+  transition: color 0.2s ease-in-out;
+}
+
+.user-info i {
+  height: 0.8rem;
+  width: auto;
+  color: var(--gray);
+
+  transition: color 0.2s ease-in-out;
+}
+
+.menu-button {
+  display: none;
+}
+
+.close-menu-button {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  padding-bottom: 2.4rem;
+}
+
+.nav-links-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 70%;
+
+  border-top: solid 1px #333;
+
+  padding-top: 2rem;
+}
+
+.nav-links-container:not(:last-child) {
+  margin-bottom: 3.2rem;
+}
+
+.nav-links-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: var(--gray);
+
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-links-container a:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.nav-links-container a.selected {
+  color: var(--content);
+}
+
+.nav-links-container a:hover {
+  color: var(--content);
+}
+
+.nav-links-container i {
+  font-size: 1.6rem;
+  margin-right: 0.8rem;
+}
